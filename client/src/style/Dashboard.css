@@ -1,0 +1,46 @@
+/* Additional styles for text color matching the button color */
+.text-primary {
+  color: #323d73 !important; /* Match the primary button color */
+}
+
+.text-primary:hover {
+  color: #4a59a3 !important; /* Match the hover color of the button */
+}
+
+.house-container .house-header, .results-container .person {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 40px;
+}
+
+.person .login, .house-header .header-lg {
+  flex: 1 0 50%;
+}
+
+.house-header .header, .person .name, .person .birthyear {
+  flex: 1 0 25%;
+}
+
+.less-headspace {
+  padding-top: 1rem !important;
+}
+
+.findHouse-headspace {
+  padding-top: 2rem !important;
+}
+
+.btn-primary {
+  background-color: #323d73 !important;
+  border-color: #323d73 !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #4a59a3 !important;
+  border-color: #4a59a3 !important;
+}
+
+.introduction {
+  font-size: 1.5rem;
+}
