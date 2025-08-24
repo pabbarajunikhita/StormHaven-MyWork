@@ -4,6 +4,19 @@
 
 Homebuyers face difficult choices when deciding where to purchase property, especially in regions prone to natural disasters. In light of the recent devastating hurricanes that impacted states on the East Coast of the United States, this application will offer users a tool to make well-informed decisions, balancing housing prices with disaster risks. By integrating real estate listings with disaster data from FEMA, our tool will provide actionable insights into affordability and safety tailored to each user’s criteria. 
 
+## Contributions to Project
+
+Data Preparation: Extracted, joined, and preprocessed FEMA and realty datasets, performing cleaning and transformation tasks using Google Colab to ensure the data was ready for use in the application. Included:
+- filtering FEMA data to retain only relevant county- and parish-level disasters, excluding location entries not relevant to the housing data
+- standardizing FEMA date fields (designated, entry, update, closeout) by coercing invalid entries and converting to a consistent YYYY-MM-DD format
+- integrating an external zipcode dataset (ZIP → county/state mapping), selecting only essential columns and cleaning inconsistencies, to serve as a bridge table for accurately joining FEMA disaster records with housing market data
+
+Frontend Development: Assisted in developing the user interface, including implementing components and integrating dynamic features for property display and disaster visualization.
+
+Query Development: Designed and implemented half of the complex queries for the Dashboard to provide actionable insights on disaster trends and property risk.
+
+Feature Implementation: Contributed to the creation of features such as property favoriting and property detail display.
+
 ## Directories
 
 App.js: Sets up the routing for the app, defining which components should be displayed for each URL path. It imports Dashboard, FindHouses, DisasterRisks, and Favorites and uses React Router to handle navigation between these pages.
